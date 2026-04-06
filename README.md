@@ -1,6 +1,8 @@
 # Config "minimalista" da Bea ;)
 Não é lá exatamente mínima, mas adicionei só o que uso com muita frequência em IDEs.
 
+![dashboard inicial ao usar o comando nvim no terminal](./dashboard.png)
+
 **Versão (Neovim):** 0.11.6  </br>
 **Gerenciador de plugins:** Lazy.nvim </br>
 **S.O.:** Arch Linux
