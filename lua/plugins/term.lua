@@ -3,7 +3,7 @@ return {
     config = function()
         require('toggleterm').setup({
             open_mapping = [[<C-\>]], -- Ctrl+\ abre/fecha
-            direction = 'float', -- 'horizontal', 'vertical' ou 'float'
+            direction = 'float',      -- 'horizontal', 'vertical' ou 'float'
             float_opts = {
                 border = 'rounded',
             },

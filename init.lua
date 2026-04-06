@@ -8,6 +8,7 @@ vim.lsp.enable({
     'lua_ls',
     'pyright',
     'rust_analyzer',
+    'clangd'
 })
 
 vim.diagnostic.config({
