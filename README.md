@@ -17,16 +17,24 @@ Não é lá exatamente mínima, mas adicionei só o que uso com muita frequênci
 - Go
 - Python
 
-## Remaps
-| Atalho           | Modo        | Descrição |
-|------------------|------------|----------|
-| `<leader>..`     | Normal     | Abre o explorador de arquivos (Ex / netrw). |
-| `<leader>d`      | Normal/Visual | Deleta sem copiar para o clipboard (usa o registro "_"). |
-| `<leader>dd`     | Normal     | Deleta a linha inteira sem copiar para o clipboard. |
-| `<leader>e`      | Normal     | Mostra os detalhes do erro/diagnóstico em um popup flutuante. |
-| `<leader>q`      | Normal     | Abre a lista de erros (location list) do buffer atual. |
-| `<F2>`           | Normal     | Renomeia símbolo usando LSP (ex: variável, função). |
-| `gr`             | Normal     | Lista todas as referências do símbolo sob o cursor (LSP). |
+
+| Atalho        | Modo        | Origem        | Descrição |
+|--------------|------------|--------------|----------|
+| `<leader>..` | Normal     | Core         | Abre o explorador de arquivos (Ex / netrw). |
+| `<leader>d`  | Normal/Visual | Core      | Deleta sem copiar para o clipboard (registro "_"). |
+| `<leader>dd` | Normal     | Core         | Deleta a linha inteira sem copiar para o clipboard. |
+| `<leader>e`  | Normal     | LSP          | Mostra diagnóstico em popup flutuante. |
+| `<leader>q`  | Normal     | LSP          | Lista todos os erros do buffer (location list). |
+| `<F2>`       | Normal     | LSP          | Renomeia símbolo (variável, função, etc.). |
+| `gr`         | Normal     | LSP          | Mostra referências do símbolo. |
+| `<leader>o`  | Normal     | aerial.nvim  | Abre/fecha a sidebar de estrutura do código. |
+| `{`          | Normal     | aerial.nvim  | Vai para o símbolo anterior (função, classe, etc.). |
+| `}`          | Normal     | aerial.nvim  | Vai para o próximo símbolo. |
+| `<CR>`       | Insert     | blink.cmp    | Confirma autocomplete. |
+| `<Tab>`      | Insert     | blink.cmp    | Seleciona próxima sugestão. |
+| `<S-Tab>`    | Insert     | blink.cmp    | Seleciona sugestão anterior. |
+| `<Esc>`      | Insert     | blink.cmp    | Cancela autocomplete. |
+| `<C-\>`      | Normal     | toggleterm   | Abre/fecha terminal flutuante. |
 
 ## Plugins:
 | Plugin            | Descrição |
