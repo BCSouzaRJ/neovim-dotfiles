@@ -9,7 +9,7 @@ Não é lá exatamente mínima, mas adicionei só o que uso com muita frequênci
 1. Atualmente, as LSPs estão todas sendo gerenciadas pela **API nativa do Neovim**. Sem mais lspconfig, pois prefiro o mínimo externo possível, e a nova API é excelente.
 2. O Treesitter, essencial pra análise sintática do código, mudou algumas dependências na versão mais recente. Caso não funcione, cheque o repositório oficial deles pra ver quais pacotes faltam!
 
-## LSPs:
+## LSPs
 - Lua
 - Javascript/Typescript
 - C e C++
@@ -17,7 +17,7 @@ Não é lá exatamente mínima, mas adicionei só o que uso com muita frequênci
 - Go
 - Python
 
-
+## Remaps
 | Atalho        | Modo        | Origem        | Descrição |
 |--------------|------------|--------------|----------|
 | `<leader>..` | Normal     | Core         | Abre o explorador de arquivos (Ex / netrw). |
@@ -36,7 +36,7 @@ Não é lá exatamente mínima, mas adicionei só o que uso com muita frequênci
 | `<Esc>`      | Insert     | blink.cmp    | Cancela autocomplete. |
 | `<C-\>`      | Normal     | toggleterm   | Abre/fecha terminal flutuante. |
 
-## Plugins:
+## Plugins
 | Plugin            | Descrição |
 |------------------|----------|
 | Comment.nvim     | Plugin para comentar e descomentar código rapidamente com atalhos, suportando diversos formatos de linguagem. |
@@ -53,3 +53,6 @@ Não é lá exatamente mínima, mas adicionei só o que uso com muita frequênci
 | rose-pine        | Tema elegante e minimalista para Neovim com foco em cores suaves. |
 | telescope.nvim   | Ferramenta de busca fuzzy altamente extensível para arquivos, buffers, grep, etc. |
 | toggleterm.nvim  | Gerencia terminais embutidos no Neovim, permitindo abrir/fechar facilmente. |
+
+É isso, espero que essa config ajude alguém. Qualquer coisa, contactar por email:
+📧 `beatriz.csouza.rj@gmail.com`
