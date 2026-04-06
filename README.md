@@ -54,5 +54,5 @@ Não é lá exatamente mínima, mas adicionei só o que uso com muita frequênci
 | telescope.nvim   | Ferramenta de busca fuzzy altamente extensível para arquivos, buffers, grep, etc. |
 | toggleterm.nvim  | Gerencia terminais embutidos no Neovim, permitindo abrir/fechar facilmente. |
 
-É isso, espero que essa config ajude alguém. Qualquer coisa, contactar por email:
+É isso, espero que essa config ajude alguém. Qualquer coisa, contactar por email: </br>
 📧 `beatriz.csouza.rj@gmail.com`
