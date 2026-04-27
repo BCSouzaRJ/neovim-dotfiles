@@ -20,6 +20,7 @@ Não é lá exatamente mínima, mas adicionei só o que uso com muita frequênci
 - Python
 
 ## Remaps
+
 | Atalho        | Modo        | Origem        | Descrição |
 |--------------|------------|--------------|----------|
 | `<leader>..` | Normal     | Core         | Abre o explorador de arquivos (Ex / netrw). |
@@ -39,6 +40,7 @@ Não é lá exatamente mínima, mas adicionei só o que uso com muita frequênci
 | `<C-\>`      | Normal     | toggleterm   | Abre/fecha terminal flutuante. |
 
 ## Plugins
+
 | Plugin            | Descrição |
 |------------------|----------|
 | Comment.nvim     | Plugin para comentar e descomentar código rapidamente com atalhos, suportando diversos formatos de linguagem. |

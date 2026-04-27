@@ -1,5 +1,18 @@
 require("stelle")
 require("stelle.lazy")
+
+vim.api.nvim_create_autocmd('InsertEnter', {
+    callback = function()
+        vim.o.timeoutlen = 0
+    end,
+})
+
+vim.api.nvim_create_autocmd('InsertLeave', {
+    callback = function()
+        vim.o.timeoutlen = 300
+    end,
+})
+
 vim.lsp.enable({
     'ts_ls',
     'cssls',
@@ -8,7 +21,8 @@ vim.lsp.enable({
     'lua_ls',
     'pyright',
     'rust_analyzer',
-    'clangd'
+    'clangd',
+    'angularls'
 })
 
 vim.diagnostic.config({
@@ -45,7 +59,6 @@ vim.api.nvim_create_autocmd('LspAttach', {
     callback = function(args)
         local opts = { buffer = args.buf }
 
-        -- keymaps que você já tinha...
         vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
         vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
         -- ...
