@@ -13,6 +13,18 @@ vim.api.nvim_create_autocmd('InsertLeave', {
     end,
 })
 
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "markdown", "text" },
+    callback = function()
+        vim.opt_local.wrap = true
+        vim.opt_local.linebreak = true
+
+        vim.keymap.set('n', 'j', 'gj', { buffer = true, silent = true })
+        vim.keymap.set('n', 'k', 'gk', { buffer = true, silent = true })
+    end,
+})
+
+
 vim.lsp.enable({
     'ts_ls',
     'cssls',
@@ -65,5 +77,13 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
         -- rename
         vim.keymap.set('n', '<F2>', vim.lsp.buf.rename, opts)
+    end,
+})
+
+-- criar comment string pra cpp
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "c", "cpp" },
+    callback = function()
+        vim.bo.commentstring = "// %s"
     end,
 })

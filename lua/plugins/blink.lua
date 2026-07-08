@@ -2,6 +2,10 @@ return {
     'saghen/blink.cmp',
     version = '*',
     opts = {
+        enabled = function()
+            return not vim.tbl_contains({ "markdown", "text" }, vim.bo.filetype)
+        end,
+
         keymap = {
             preset      = 'default',
             ['<CR>']    = { 'accept', 'fallback' },      -- confirma com Enter
