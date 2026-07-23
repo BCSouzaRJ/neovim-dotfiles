@@ -13,13 +13,13 @@ return {
         ft = { "html", "css", "javascriptreact", "typescriptreact" },
         init = function()
             vim.g.user_emmet_install_global = 0
-            vim.g.user_emmet_leader_key = "<C-y>"
+            vim.g.user_emmet_leader_key = "<C-e>"
         end,
         config = function()
             vim.cmd("EmmetInstall")
             vim.cmd("autocmd FileType html,css EmmetInstall")
-            vim.keymap.set("i", "<leader>y", "<C-y>,", { remap = true })
-            vim.keymap.set("v", "<leader>y", "<C-y>,", { remap = true })
+            vim.keymap.set("i", "<leader>y", "<C-e>,", { remap = true })
+            vim.keymap.set("v", "<leader>y", "<C-e>,", { remap = true })
         end,
     },
 }
